@@ -106,7 +106,7 @@ export function IntroductionSlide() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="w-80 h-56 md:w-96 md:h-64 lg:w-[28rem] lg:h-80 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+              <div className="w-66 h-42 md:w-[30rem] md:h-80 lg:w-[34rem] lg:h-96 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
                 <img
                   src="/DPI 2.jpg"
                   alt="DPI - Doença Pulmonar Intersticial"
