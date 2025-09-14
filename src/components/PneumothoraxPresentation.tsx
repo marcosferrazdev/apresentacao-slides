@@ -8,7 +8,6 @@ import {
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { EndPresentationModal } from "./EndPresentationModal";
-// Pneumothorax, Pleural Effusion and Empyema slides
 import { PneumothoraxTitleSlide } from "./pneumothorax-slides/PneumothoraxTitleSlide";
 import { PneumothoraxDefinitionSlide } from "./pneumothorax-slides/PneumothoraxDefinitionSlide";
 import { PneumothoraxClassificationSlide } from "./pneumothorax-slides/PneumothoraxClassificationSlide";
@@ -21,17 +20,7 @@ import EmpyemaDefinitionSlide from "./pneumothorax-slides/EmpyemaDefinitionSlide
 import EmpyemaDiagnosisSlide from "./pneumothorax-slides/EmpyemaDiagnosisSlide";
 import EmpyemaTreatmentSlide from "./pneumothorax-slides/EmpyemaTreatmentSlide";
 
-// Atelectasia slides
-import { AtelectasiaTitleSlide } from "./atelectasia-slides/AtelectasiaTitleSlide";
-import { AlveolarStabilitySlide } from "./atelectasia-slides/AlveolarStabilitySlide";
-import { ClassificationSlide } from "./atelectasia-slides/ClassificationSlide";
-import { PostOperativeSlide } from "./atelectasia-slides/PostOperativeSlide";
-import { PathophysiologySlide } from "./atelectasia-slides/PathophysiologySlide";
-import { RadiologySlide } from "./atelectasia-slides/RadiologySlide";
-import { AtelectasiaConclusionSlide } from "./atelectasia-slides/AtelectasiaConclusionSlide";
-
 const slides = [
-  // Pneumothorax, Pleural Effusion and Empyema slides (1-11)
   { id: 1, component: PneumothoraxTitleSlide },
   { id: 2, component: PneumothoraxDefinitionSlide },
   { id: 3, component: PneumothoraxClassificationSlide },
@@ -43,22 +32,13 @@ const slides = [
   { id: 9, component: EmpyemaDefinitionSlide },
   { id: 10, component: EmpyemaDiagnosisSlide },
   { id: 11, component: EmpyemaTreatmentSlide },
-  
-  // Atelectasia slides (12-18)
-  { id: 12, component: AtelectasiaTitleSlide },
-  { id: 13, component: AlveolarStabilitySlide },
-  { id: 14, component: ClassificationSlide },
-  { id: 15, component: PostOperativeSlide },
-  { id: 16, component: PathophysiologySlide },
-  { id: 17, component: RadiologySlide },
-  { id: 18, component: AtelectasiaConclusionSlide },
 ];
 
-interface AtelectasiaPresentationProps {
+interface PneumothoraxPresentationProps {
   onGoHome?: () => void;
 }
 
-export function AtelectasiaPresentation({ onGoHome }: AtelectasiaPresentationProps) {
+export function PneumothoraxPresentation({ onGoHome }: PneumothoraxPresentationProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showEndModal, setShowEndModal] = useState(false);
 
@@ -92,39 +72,38 @@ export function AtelectasiaPresentation({ onGoHome }: AtelectasiaPresentationPro
     }
   };
 
-  // Keyboard navigation
   useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (showEndModal) return; // Don't navigate when modal is open
-      
-      if (e.key === "ArrowRight" || e.key === " ") {
-        e.preventDefault();
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowRight" || event.key === " ") {
+        event.preventDefault();
         nextSlide();
-      } else if (e.key === "ArrowLeft") {
-        e.preventDefault();
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
         prevSlide();
+      } else if (event.key === "Escape") {
+        event.preventDefault();
+        setShowEndModal(true);
       }
     };
 
-    window.addEventListener("keydown", handleKeyPress);
-    return () =>
-      window.removeEventListener("keydown", handleKeyPress);
-  }, [currentSlide, showEndModal]);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [currentSlide]);
 
   const CurrentSlideComponent = slides[currentSlide].component;
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-blue-50 via-white to-slate-50">
-      {/* Slide Content */}
-      <div className="relative w-full h-full">
+    <div className="relative w-full h-screen bg-gradient-to-br from-blue-50 via-white to-slate-100 overflow-hidden">
+      {/* Main Slide Content */}
+      <div className="w-full h-full flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.05 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="absolute inset-0"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.3 }}
+            className="w-full h-full"
           >
             <CurrentSlideComponent />
           </motion.div>
@@ -186,7 +165,7 @@ export function AtelectasiaPresentation({ onGoHome }: AtelectasiaPresentationPro
         onClose={() => setShowEndModal(false)}
         onRestartPresentation={restartPresentation}
         onGoHome={handleGoHome}
-        presentationTitle="Fisiopatologia das Doenças Pleurais e Atelectasia: Uma Abordagem Clínica Integrada"
+        presentationTitle="Pneumotórax, Derrame Pleural e Empiema: Uma Abordagem Clínica e Terapêutica"
       />
     </div>
   );
