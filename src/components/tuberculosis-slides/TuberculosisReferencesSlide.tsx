@@ -42,6 +42,10 @@ export function TuberculosisReferencesSlide() {
             <p className="border-l-4 border-blue-200 pl-6 py-4 bg-blue-50/50 rounded-r-lg hover:bg-blue-50 transition-colors duration-300">
               <strong className="text-blue-700">2.</strong> ALSAYED, S. S. R.; GUNOSEWOYO, H. Tuberculosis: Pathogenesis, Current Treatment Regimens and New Drug Targets. <em>Int J Mol Sci.</em>, n. 24, v. 6, 2023.
             </p>
+            
+            <p className="border-l-4 border-blue-200 pl-6 py-4 bg-blue-50/50 rounded-r-lg hover:bg-blue-50 transition-colors duration-300">
+              <strong className="text-blue-700">3.</strong> TOBIN, E. H.; TRISTRAM, D. V. Tuberculosis Overview. <em>StatPearls</em>, 2024.
+            </p>
           </div>
         </motion.div>
 
