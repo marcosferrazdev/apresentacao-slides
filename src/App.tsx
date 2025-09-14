@@ -147,13 +147,8 @@ export default function App() {
           >
             <Heart className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Fisiopatologia da Pneumonia
+              Pneumonia
             </h3>
-            <p className="text-blue-700 mb-6 leading-relaxed">
-              Uma abordagem integrada sobre os mecanismos de
-              defesa do trato respiratório, processo infeccioso
-              e correlação clínico-fisiopatológica.
-            </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -171,13 +166,8 @@ export default function App() {
           >
             <Bug className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Fisiopatologia da Tuberculose
+              Tuberculose
             </h3>
-            <p className="text-blue-700 mb-6 leading-relaxed">
-              Do contágio à cavitação: compreenda os mecanismos
-              do Mycobacterium tuberculosis, formação do
-              granuloma e progressão para doença ativa.
-            </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -195,13 +185,8 @@ export default function App() {
           >
             <CircleDot className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Fisiopatologia da Atelectasia
+              Doenças Pleurais + Atelectasia
             </h3>
-            <p className="text-blue-700 mb-6 leading-relaxed">
-              Estudo dos mecanismos de colapso alveolar,
-              estabilidade pulmonar, classificação e implicações
-              clínicas da atelectasia.
-            </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -221,11 +206,6 @@ export default function App() {
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
               Doenças Pulmonares Intersticiais
             </h3>
-            <p className="text-blue-700 mb-6 leading-relaxed">
-              Classificação, patogênese e manejo das DPIs:
-              compreenda os mecanismos de inflamação e fibrose
-              no interstício pulmonar.
-            </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
