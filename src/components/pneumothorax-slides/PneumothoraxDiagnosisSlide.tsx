@@ -180,6 +180,23 @@ export function PneumothoraxDiagnosisSlide() {
             </div>
           </motion.div>
         </div>
+
+        {/* Medical Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="mt-8 flex justify-center"
+        >
+          <div className="relative max-w-lg rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+            <img
+              src="/Pleurais 3.jpg"
+              alt="Diagnóstico de Pneumotórax"
+              className="w-full h-auto object-contain opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+          </div>
+        </motion.div>
       </div>
     </div>
   );

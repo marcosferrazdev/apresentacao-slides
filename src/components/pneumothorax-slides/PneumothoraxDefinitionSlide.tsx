@@ -144,8 +144,8 @@ export function PneumothoraxDefinitionSlide() {
         >
           <div className="relative w-80 h-48 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
             <ImageWithFallback
-              src="/Raio X 2.jpg"
-              alt="Pneumotórax - Radiografia"
+              src="/Pleurais 2.jpg"
+              alt="Anatomia Pleural - Pneumotórax"
               className="w-full h-full object-contain opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
