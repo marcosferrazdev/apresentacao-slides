@@ -69,55 +69,53 @@ export function IntroductionSlide() {
           </h2>
         </motion.div>
 
-        {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto mb-6 md:mb-8">
-          {points.map((point, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: point.delay }}
-              className="bg-white/70 backdrop-blur-sm rounded-lg p-4 md:p-6 lg:p-8 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300"
-            >
-              <div className="flex items-start space-x-3 md:space-x-4">
-                <div className="flex-shrink-0">
-                  <point.icon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-blue-600 mt-1" />
+        {/* Content Layout - Cards Left, Image Right */}
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto items-center">
+          {/* Cards Section - Left */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-6">
+            {points.map((point, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: point.delay }}
+                className="bg-white/70 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div className="flex items-start space-x-3 md:space-x-4">
+                  <div className="flex-shrink-0">
+                    <point.icon className="w-6 h-6 md:w-7 md:h-7 text-blue-600 mt-1" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-1 md:mb-2">
+                      {point.title}
+                    </h3>
+                    <p className="text-sm md:text-base text-blue-700 leading-relaxed">
+                      {point.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-1 md:mb-2">
-                    {point.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-blue-700 leading-relaxed">
-                    {point.description}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Central Illustration */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 1.4 }}
-          className="flex justify-center"
-        >
-          <div className="relative mb-8 md:mb-12">
-            <div className="w-60 h-20 md:w-64 md:h-24 lg:w-72 lg:h-28 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg border-2 border-blue-300 flex items-center justify-center">
-              <div className="flex items-center space-x-1.5 md:space-x-2 lg:space-x-3">
-                <Network className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-blue-600" />
-                <ArrowRight className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-blue-500" />
-                <Zap className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-blue-600" />
-                <ArrowRight className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-blue-500" />
-                <Heart className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-blue-600" />
-              </div>
-            </div>
-            <div className="mt-3 md:mt-4 lg:mt-6 w-60 md:w-64 lg:w-72 text-xs md:text-sm lg:text-base text-blue-600 font-medium text-center">
-              Interstício → Inflamação/Fibrose → Disfunção
-            </div>
+              </motion.div>
+            ))}
           </div>
-        </motion.div>
+
+          {/* Image Section - Right */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              <div className="w-80 h-56 md:w-96 md:h-64 lg:w-[28rem] lg:h-80 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+                <img
+                  src="/DPI 2.jpg"
+                  alt="DPI - Doença Pulmonar Intersticial"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );
