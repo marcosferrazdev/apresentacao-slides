@@ -43,7 +43,8 @@ export function PneumothoraxDefinitionSlide() {
         </motion.div>
       </motion.div>
 
-      <div className="flex-1 relative z-10">
+      <div className="flex-1 relative z-10 flex gap-2">        {/* Left side - Cards */}
+        <div className="flex-1 space-y-8">
         {/* Definition Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -135,20 +136,24 @@ export function PneumothoraxDefinitionSlide() {
           </div>
         </motion.div>
 
-        {/* Medical Image */}
+        </div>
+
+        {/* Right side - Image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="mt-8 flex justify-center"
+          className="flex-1 flex items-center justify-center"
         >
-          <div className="relative w-80 h-48 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+          <div className="relative">
             <ImageWithFallback
               src="/Pleurais 2.jpg"
               alt="Anatomia Pleural - Pneumotórax"
-              className="w-full h-full object-contain opacity-80"
+              className="w-full h-[800px] object-cover rounded-xl shadow-2xl border-4 border-white"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+            <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg">
+              <span className="text-sm font-semibold">Anatomia Pleural</span>
+            </div>
           </div>
         </motion.div>
       </div>

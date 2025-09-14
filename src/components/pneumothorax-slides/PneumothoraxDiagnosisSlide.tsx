@@ -42,15 +42,15 @@ export function PneumothoraxDiagnosisSlide() {
         </motion.div>
       </motion.div>
 
-      <div className="flex-1 relative z-10">
-        {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-3 gap-6 mb-6">
+      <div className="flex-1 relative z-10 flex gap-6">
+        {/* Left side - Cards */}
+        <div className="w-2/3 flex gap-3">
           {/* Manifestações Clínicas */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-blue-100 shadow-lg flex-1 min-w-0"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -95,7 +95,7 @@ export function PneumothoraxDiagnosisSlide() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-blue-100 shadow-lg flex-1 min-w-0"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -147,7 +147,7 @@ export function PneumothoraxDiagnosisSlide() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-blue-100 shadow-lg flex-1 min-w-0"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -181,20 +181,22 @@ export function PneumothoraxDiagnosisSlide() {
           </motion.div>
         </div>
 
-        {/* Medical Image */}
+        {/* Right side - Image */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="mt-8 flex justify-center"
+          className="flex-1 flex items-center justify-center"
         >
-          <div className="relative max-w-lg rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+          <div className="relative">
             <img
               src="/Pleurais 3.jpg"
               alt="Diagnóstico de Pneumotórax"
-              className="w-full h-auto object-contain opacity-90"
+              className="w-full max-h-[600px] object-cover rounded-xl shadow-2xl border-4 border-white"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+            <div className="absolute bottom-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-lg shadow-lg">
+              <span className="text-sm font-semibold">Diagnóstico</span>
+            </div>
           </div>
         </motion.div>
       </div>
