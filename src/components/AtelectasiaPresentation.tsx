@@ -17,6 +17,7 @@ import { PneumothoraxTreatmentSlide } from "./pneumothorax-slides/PneumothoraxTr
 import { PneumothoraxTreatmentSlide2 } from "./pneumothorax-slides/PneumothoraxTreatmentSlide2";
 import { PleuralEffusionDefinitionSlide } from "./pneumothorax-slides/PleuralEffusionDefinitionSlide";
 import { PleuralEffusionDiagnosisSlide } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide";
+import { PleuralEffusionDiagnosisSlide2 } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide2";
 import { PleuralEffusionTreatmentSlide } from "./pneumothorax-slides/PleuralEffusionTreatmentSlide";
 import EmpyemaDefinitionSlide from "./pneumothorax-slides/EmpyemaDefinitionSlide";
 import EmpyemaDiagnosisSlide from "./pneumothorax-slides/EmpyemaDiagnosisSlide";
@@ -32,7 +33,7 @@ import { RadiologySlide } from "./atelectasia-slides/RadiologySlide";
 import { AtelectasiaConclusionSlide } from "./atelectasia-slides/AtelectasiaConclusionSlide";
 
 const slides = [
-  // Pneumothorax, Pleural Effusion and Empyema slides (1-12)
+  // Pneumothorax, Pleural Effusion and Empyema slides (1-13)
   { id: 1, component: PneumothoraxTitleSlide },
   { id: 2, component: PneumothoraxDefinitionSlide },
   { id: 3, component: PneumothoraxClassificationSlide },
@@ -41,19 +42,20 @@ const slides = [
   { id: 6, component: PneumothoraxTreatmentSlide2 },
   { id: 7, component: PleuralEffusionDefinitionSlide },
   { id: 8, component: PleuralEffusionDiagnosisSlide },
-  { id: 9, component: PleuralEffusionTreatmentSlide },
-  { id: 10, component: EmpyemaDefinitionSlide },
-  { id: 11, component: EmpyemaDiagnosisSlide },
-  { id: 12, component: EmpyemaTreatmentSlide },
+  { id: 9, component: PleuralEffusionDiagnosisSlide2 },
+  { id: 10, component: PleuralEffusionTreatmentSlide },
+  { id: 11, component: EmpyemaDefinitionSlide },
+  { id: 12, component: EmpyemaDiagnosisSlide },
+  { id: 13, component: EmpyemaTreatmentSlide },
   
-  // Atelectasia slides (13-19)
-  { id: 13, component: AtelectasiaTitleSlide },
-  { id: 14, component: AlveolarStabilitySlide },
-  { id: 15, component: ClassificationSlide },
-  { id: 16, component: PostOperativeSlide },
-  { id: 17, component: PathophysiologySlide },
-  { id: 18, component: RadiologySlide },
-  { id: 19, component: AtelectasiaConclusionSlide },
+  // Atelectasia slides (14-20)
+  { id: 14, component: AtelectasiaTitleSlide },
+  { id: 15, component: AlveolarStabilitySlide },
+  { id: 16, component: ClassificationSlide },
+  { id: 17, component: PostOperativeSlide },
+  { id: 18, component: PathophysiologySlide },
+  { id: 19, component: RadiologySlide },
+  { id: 20, component: AtelectasiaConclusionSlide },
 ];
 
 interface AtelectasiaPresentationProps {
