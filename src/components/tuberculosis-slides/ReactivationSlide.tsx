@@ -178,62 +178,19 @@ export function ReactivationSlide() {
             className="relative"
           >
             <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 border-2 border-blue-200">
-              <h3 className="text-blue-900 mb-6 text-center">
-                Processo de Cavitação
-              </h3>
-
-              {/* Progressive stages */}
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 2.2 }}
-                  className="flex items-center space-x-4"
-                >
-                  <div className="w-12 h-12 bg-gray-400 rounded-full relative">
-                    <div className="absolute inset-2 bg-yellow-300 rounded-full"></div>
-                  </div>
-                  <span className="text-blue-800 text-sm">
-                    Granuloma sólido
-                  </span>
-                </motion.div>
-
-                <div className="text-center text-blue-600 text-2xl">
-                  ↓
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 2.4 }}
-                  className="flex items-center space-x-4"
-                >
-                  <div className="w-12 h-12 bg-gray-400 rounded-full relative">
-                    <div className="absolute inset-2 bg-orange-300 rounded-full animate-pulse"></div>
-                  </div>
-                  <span className="text-blue-800 text-sm">
-                    Liquefação
-                  </span>
-                </motion.div>
-
-                <div className="text-center text-blue-600 text-2xl">
-                  ↓
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 2.6 }}
-                  className="flex items-center space-x-4"
-                >
-                  <div className="w-12 h-12 bg-gray-400 rounded-full relative">
-                    <div className="absolute inset-3 border-2 border-red-400 rounded-full bg-transparent"></div>
-                  </div>
-                  <span className="text-blue-800 text-sm">
-                    Cavidade
-                  </span>
-                </motion.div>
-              </div>
+              {/* Medical Image */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 2.2 }}
+                className="flex justify-center"
+              >
+                <img 
+                  src="/Tuberculose 1.jpg" 
+                  alt="Tuberculose - Processo de Cavitação" 
+                  className="w-80 h-60 object-cover rounded-lg shadow-lg border border-blue-200"
+                />
+              </motion.div>
             </div>
           </motion.div>
         </div>
