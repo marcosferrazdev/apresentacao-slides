@@ -116,14 +116,16 @@ export function TransmissionSlide() {
               <h3 className="text-blue-900 mb-6 text-center">
                 Foco de Ghon
               </h3>
-              <div className="bg-white rounded-xl p-6 border border-blue-200 shadow-sm">
-                <p className="text-blue-800 text-center mb-4">
+              <div className="bg-white rounded-xl p-8 border border-blue-200 shadow-sm min-h-[280px] flex flex-col justify-center">
+                <p className="text-blue-800 text-center mb-6">
                   Pequeno foco de inflamação no pulmão.
                 </p>
-                <div className="flex justify-center space-x-2">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-                  <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse delay-100"></div>
-                  <div className="w-3 h-3 bg-blue-600 rounded-full animate-pulse delay-200"></div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/Tuberculose 2.jpg" 
+                    alt="Tuberculose - Foco de inflamação pulmonar" 
+                    className="w-48 h-36 object-cover rounded-lg shadow-md border border-blue-200"
+                  />
                 </div>
               </div>
             </div>
