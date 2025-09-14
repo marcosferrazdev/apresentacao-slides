@@ -115,51 +115,17 @@ export function GranulomaSlide() {
             transition={{ duration: 0.8, delay: 1.0 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 border-2 border-blue-200">
-              <h3 className="text-blue-900 mb-6 text-center">
-                Estrutura do Granuloma
-              </h3>
-
-              {/* Concentric circles representing granuloma layers */}
-              <div className="relative w-64 h-64 mx-auto">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 border-2 border-blue-200 min-h-[320px] flex flex-col justify-center">
+              {/* Granuloma Image */}
+              <div className="flex justify-center">
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 1.2 }}
-                  className="absolute inset-0 bg-blue-600 rounded-full opacity-20"
+                  src="/Tuberculose 3.jpg"
+                  alt="Tuberculose - Estrutura do Granuloma"
+                  className="w-80 h-60 object-cover rounded-lg shadow-md border border-blue-200"
                 />
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 0.8 }}
-                  transition={{ duration: 0.8, delay: 1.4 }}
-                  className="absolute inset-4 bg-blue-500 rounded-full opacity-40"
-                />
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 0.6 }}
-                  transition={{ duration: 0.8, delay: 1.6 }}
-                  className="absolute inset-8 bg-blue-400 rounded-full opacity-60"
-                />
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 0.4 }}
-                  transition={{ duration: 0.8, delay: 1.8 }}
-                  className="absolute inset-12 bg-yellow-300 rounded-full opacity-80"
-                />
-
-                {/* Labels */}
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs text-blue-700">
-                  Linfócitos
-                </div>
-                <div className="absolute -right-12 top-1/2 transform -translate-y-1/2 text-xs text-blue-700">
-                  Epitélio
-                </div>
-                <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-blue-700">
-                  Fibroblastos
-                </div>
-                <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 text-xs text-blue-700">
-                  Necrose caseosa
-                </div>
               </div>
             </div>
           </motion.div>
