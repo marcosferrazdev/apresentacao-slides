@@ -114,11 +114,11 @@ export function AtelectasiaTitleSlide() {
           transition={{ duration: 0.8, delay: 2.0 }}
           className="mt-12"
         >
-          <div className="relative mx-auto w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+          <div className="relative mx-auto w-64 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbHVuZ3MlMjBhbmF0b215fGVufDF8fHx8MTc1NzY5ODk4N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Anatomia pulmonar"
-              className="w-full h-full object-cover opacity-80"
+              src="/Atelectasia 1.jpg"
+              alt="Atelectasia"
+              className="w-full h-full object-contain opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
           </div>
