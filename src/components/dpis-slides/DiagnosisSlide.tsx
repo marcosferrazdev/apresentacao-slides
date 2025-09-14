@@ -77,37 +77,73 @@ export function DiagnosisSlide() {
           ))}
         </div>
 
+        {/* Layout com imagens nas laterais e algoritmo no centro */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.8 }}
-          className="mt-4 md:mt-6 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-4 md:p-6 border border-blue-200"
+          className="mt-4 md:mt-6 grid lg:grid-cols-3 gap-4 items-center"
         >
-          <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-3 md:mb-4">
-            Algoritmo Diagnóstico
-          </h3>
-          
-          <div className="flex items-center justify-center space-x-2 md:space-x-4 text-xs md:text-sm">
-            <div className="text-center">
-              <Users className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-1" />
-              <div className="text-blue-800">Multidisciplinar</div>
+          {/* Imagem DPI 3 - Esquerda */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 2.0 }}
+            className="flex justify-center"
+          >
+            <div className="w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+              <img
+                src="/DPI 3.jpg"
+                alt="DPI - Diagnóstico 1"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="text-blue-400">→</div>
-            <div className="text-center">
-              <FileText className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-1" />
-              <div className="text-blue-800">História</div>
-            </div>
-            <div className="text-blue-400">→</div>
-            <div className="text-center">
-              <Search className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-1" />
-              <div className="text-blue-800">TCAR</div>
-            </div>
-            <div className="text-blue-400">→</div>
-            <div className="text-center">
-              <Microscope className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-1" />
-              <div className="text-blue-800">Biópsia</div>
+          </motion.div>
+
+          {/* Algoritmo Diagnóstico - Centro */}
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-4 md:p-6 border border-blue-200">
+            <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-3 md:mb-4">
+              Algoritmo Diagnóstico
+            </h3>
+            
+            <div className="flex items-center justify-center space-x-2 md:space-x-3 text-xs md:text-sm">
+              <div className="text-center">
+                <Users className="w-5 h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-1" />
+                <div className="text-blue-800">Multidisciplinar</div>
+              </div>
+              <div className="text-blue-400">→</div>
+              <div className="text-center">
+                <FileText className="w-5 h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-1" />
+                <div className="text-blue-800">História</div>
+              </div>
+              <div className="text-blue-400">→</div>
+              <div className="text-center">
+                <Search className="w-5 h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-1" />
+                <div className="text-blue-800">TCAR</div>
+              </div>
+              <div className="text-blue-400">→</div>
+              <div className="text-center">
+                <Microscope className="w-5 h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-1" />
+                <div className="text-blue-800">Biópsia</div>
+              </div>
             </div>
           </div>
+
+          {/* Imagem DPI 4 - Direita */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 2.2 }}
+            className="flex justify-center"
+          >
+            <div className="w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+              <img
+                src="/DPI 4.jpg"
+                alt="DPI - Diagnóstico 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>
