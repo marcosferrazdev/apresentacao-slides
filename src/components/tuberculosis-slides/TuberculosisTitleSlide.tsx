@@ -67,7 +67,7 @@ export function TuberculosisTitleSlide() {
             <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h3 className="text-blue-900 mb-2">Relevância</h3>
             <p className="text-blue-700 text-sm">
-              Endemia global, alta morbimortalidade
+              Alta morbimortalidade
             </p>
           </motion.div>
 

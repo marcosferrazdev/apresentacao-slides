@@ -68,17 +68,7 @@ export function LatentVsActiveSlide() {
                 </p>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.4 }}
-                className="flex items-start space-x-3"
-              >
-                <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-slate-700">
-                  90-95% dos infectados
-                </p>
-              </motion.div>
+              
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
