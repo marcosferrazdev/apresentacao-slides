@@ -91,7 +91,7 @@ export function DiagnosisSlide() {
             transition={{ duration: 0.8, delay: 2.0 }}
             className="flex justify-center"
           >
-            <div className="w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+            <div className="w-64 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
               <img
                 src="/DPI 3.jpg"
                 alt="DPI - Diagnóstico 1"
@@ -136,7 +136,7 @@ export function DiagnosisSlide() {
             transition={{ duration: 0.8, delay: 2.2 }}
             className="flex justify-center"
           >
-            <div className="w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+            <div className="w-64 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
               <img
                 src="/DPI 4.jpg"
                 alt="DPI - Diagnóstico 2"
