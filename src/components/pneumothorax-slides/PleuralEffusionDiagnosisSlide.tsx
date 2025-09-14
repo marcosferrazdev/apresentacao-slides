@@ -156,94 +156,18 @@ export function PleuralEffusionDiagnosisSlide() {
               {/* Additional Imaging */}
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                 <h4 className="font-semibold text-green-800 mb-2 text-sm">
-                  🔍 Métodos Complementares
+                  Toracocentese
                 </h4>
                 <ul className="text-green-700 text-xs space-y-1">
-                  <li>• <strong>Ultrassom:</strong> Localização e volume</li>
-                  <li>• <strong>TC de tórax:</strong> Caracterização detalhada</li>
-                  <li>• <strong>Decúbito lateral:</strong> Mobilidade do líquido</li>
+                  <li>• Procedimento diagnóstico e, por vezes, terapêutico</li>
+                  <li>• Análise do líquido pleural para diferenciação de transudato e exsudato</li>
                 </ul>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Thoracentesis Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg mb-6"
-        >
-          <div className="text-center mb-6">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
-              className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-3"
-            >
-              <Syringe className="w-8 h-8 text-orange-600" />
-            </motion.div>
-            <h3 className="text-xl font-bold text-blue-900 mb-2">
-              Toracocentese
-            </h3>
-            <div className="h-0.5 bg-orange-500 w-16 mx-auto mb-4"></div>
-            <p className="text-blue-700 text-sm">
-              Procedimento <strong>diagnóstico</strong> e, por vezes, <strong>terapêutico</strong>
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-4">
-            {/* Light's Criteria */}
-            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-              <h4 className="font-semibold text-orange-800 mb-3 text-sm text-center">
-                ⚖️ Critérios de Light
-              </h4>
-              <div className="text-orange-700 text-xs space-y-2">
-                <div className="bg-white/70 rounded p-2">
-                  <strong>Proteína pleural/sérica</strong><br/>
-                  &gt; 0,5
-                </div>
-                <div className="bg-white/70 rounded p-2">
-                  <strong>LDH pleural/sérica</strong><br/>
-                  &gt; 0,6
-                </div>
-                <div className="bg-white/70 rounded p-2">
-                  <strong>LDH pleural</strong><br/>
-                  &gt; 2/3 do limite superior sérico
-                </div>
-              </div>
-            </div>
-
-            {/* Analysis Parameters */}
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 className="font-semibold text-blue-800 mb-3 text-sm text-center">
-                🧪 Análise do Líquido
-              </h4>
-              <ul className="text-blue-700 text-xs space-y-1">
-                <li>• <strong>Aspecto:</strong> Claro, turvo, hemorrágico</li>
-                <li>• <strong>Citologia:</strong> Contagem celular</li>
-                <li>• <strong>Bioquímica:</strong> Proteínas, LDH, glicose</li>
-                <li>• <strong>Microbiologia:</strong> Gram, culturas</li>
-                <li>• <strong>pH:</strong> Importante no empiema</li>
-              </ul>
-            </div>
-
-            {/* Etiological Investigation */}
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h4 className="font-semibold text-green-800 mb-3 text-sm text-center">
-                🔬 Investigação Etiológica
-              </h4>
-              <ul className="text-green-700 text-xs space-y-1">
-                <li>• <strong>ADA:</strong> Tuberculose pleural</li>
-                <li>• <strong>Citologia oncótica:</strong> Neoplasias</li>
-                <li>• <strong>Complemento:</strong> Doenças autoimunes</li>
-                <li>• <strong>Triglicerídeos:</strong> Quilotórax</li>
-                <li>• <strong>Amilase:</strong> Pancreatite</li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
+       
 
         {/* Diagnostic Algorithm */}
         <motion.div

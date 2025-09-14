@@ -161,7 +161,6 @@ export function PneumothoraxTreatmentSlide() {
                 <ul className="text-red-700 text-xs space-y-1 mb-3">
                   <li>• Instabilidade hemodinâmica</li>
                   <li>• Desvio contralateral do mediastino</li>
-                  <li>• Comprometimento do retorno venoso</li>
                 </ul>
                 <h4 className="font-semibold text-red-800 mb-2 text-sm">
                   ⚡ Manejo Imediato
@@ -192,24 +191,16 @@ export function PneumothoraxTreatmentSlide() {
                 <Scissors className="w-8 h-8 text-purple-600" />
               </motion.div>
               <h3 className="text-lg font-bold text-blue-900 mb-2">
-                Tratamento Cirúrgico
+                Recidivante ou Persistente
               </h3>
               <div className="text-sm text-purple-600 font-medium mb-2">
-                Recidivante ou Persistente
+                Tratamento Cirúrgico
               </div>
               <div className="h-0.5 bg-purple-500 w-12 mx-auto"></div>
             </div>
 
             <div className="space-y-3">
               <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                <h4 className="font-semibold text-purple-800 mb-2 text-sm">
-                  🔬 Indicações
-                </h4>
-                <ul className="text-purple-700 text-xs space-y-1 mb-3">
-                  <li>• Pneumotórax recidivante</li>
-                  <li>• Fístula broncopleural persistente</li>
-                  <li>• Falha do tratamento conservador</li>
-                </ul>
                 <h4 className="font-semibold text-purple-800 mb-2 text-sm">
                   ⚙️ Técnica Preferencial
                 </h4>
