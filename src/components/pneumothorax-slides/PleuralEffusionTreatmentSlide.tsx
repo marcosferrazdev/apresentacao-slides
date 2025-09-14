@@ -105,31 +105,7 @@ export function PleuralEffusionTreatmentSlide() {
                   O manejo consiste no <strong>tratamento otimizado da condição subjacente</strong>.
                 </p>
                 
-                <div className="space-y-3">
-                  <div className="bg-white/70 rounded-lg p-3 border border-green-100">
-                    <h5 className="font-semibold text-green-800 mb-2 text-xs flex items-center">
-                      <Heart className="w-3 h-3 mr-1" />
-                      Insuficiência Cardíaca
-                    </h5>
-                    <ul className="text-green-700 text-xs space-y-1">
-                      <li>• <strong>Diuréticos</strong> (furosemida, espironolactona)</li>
-                      <li>• <strong>IECA/BRA</strong> para controle da pós-carga</li>
-                      <li>• <strong>Betabloqueadores</strong> quando indicados</li>
-                      <li>• Restrição de sódio e controle hídrico</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-white/70 rounded-lg p-3 border border-green-100">
-                    <h5 className="font-semibold text-green-800 mb-2 text-xs">
-                      🫁 Outras Causas
-                    </h5>
-                    <ul className="text-green-700 text-xs space-y-1">
-                      <li>• <strong>Cirrose:</strong> Diuréticos, paracentese</li>
-                      <li>• <strong>Síndrome nefrótica:</strong> Controle proteinúria</li>
-                      <li>• <strong>Mixedema:</strong> Reposição hormonal</li>
-                    </ul>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </motion.div>
@@ -167,18 +143,6 @@ export function PleuralEffusionTreatmentSlide() {
                 
                 <div className="space-y-3">
                   <div className="bg-white/70 rounded-lg p-3 border border-red-100">
-                    <h5 className="font-semibold text-red-800 mb-2 text-xs">
-                      💊 Tratamento Etiológico
-                    </h5>
-                    <ul className="text-red-700 text-xs space-y-1">
-                      <li>• <strong>Infecções:</strong> Antibioticoterapia adequada</li>
-                      <li>• <strong>Tuberculose:</strong> Esquema antituberculose</li>
-                      <li>• <strong>Neoplasias:</strong> Quimio/radioterapia</li>
-                      <li>• <strong>Autoimunes:</strong> Corticosteroides/imunossupressores</li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-white/70 rounded-lg p-3 border border-red-100">
                     <h5 className="font-semibold text-red-800 mb-2 text-xs flex items-center">
                       <Syringe className="w-3 h-3 mr-1" />
                       Intervenção Direta
@@ -194,82 +158,6 @@ export function PleuralEffusionTreatmentSlide() {
             </div>
           </motion.div>
         </div>
-
-        {/* Symptomatic Management */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.6 }}
-          className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg mb-6"
-        >
-          <div className="text-center mb-4">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.6, delay: 1.8 }}
-              className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-3"
-            >
-              <Droplets className="w-8 h-8 text-purple-600" />
-            </motion.div>
-            <h3 className="text-lg font-bold text-blue-900 mb-2">
-              Manejo Sintomático
-            </h3>
-            <div className="h-0.5 bg-purple-500 w-12 mx-auto"></div>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-4">
-            {/* Therapeutic Thoracentesis */}
-            <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-              <h4 className="font-semibold text-purple-800 mb-2 text-sm">
-                💉 Toracocentese Terapêutica
-              </h4>
-              <div className="space-y-2">
-                <div className="text-purple-700 text-xs">
-                  <strong>Indicações:</strong>
-                </div>
-                <ul className="text-purple-700 text-xs space-y-1">
-                  <li>• Dispneia significativa</li>
-                  <li>• Volume &gt; 1500 mL</li>
-                  <li>• Comprometimento funcional</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Pleural Drainage */}
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h4 className="font-semibold text-blue-800 mb-2 text-sm">
-                🔧 Drenagem Pleural
-              </h4>
-              <div className="space-y-2">
-                <div className="text-blue-700 text-xs">
-                  <strong>Indicações:</strong>
-                </div>
-                <ul className="text-blue-700 text-xs space-y-1">
-                  <li>• Empiema</li>
-                  <li>• Derrame complicado</li>
-                  <li>• Reacúmulo rápido</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Pleurodesis */}
-            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-              <h4 className="font-semibold text-orange-800 mb-2 text-sm">
-                ⚙️ Pleurodese
-              </h4>
-              <div className="space-y-2">
-                <div className="text-orange-700 text-xs">
-                  <strong>Indicações:</strong>
-                </div>
-                <ul className="text-orange-700 text-xs space-y-1">
-                  <li>• Derrame recidivante</li>
-                  <li>• Derrame maligno</li>
-                  <li>• Falha do tratamento conservador</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Treatment Algorithm */}
         <motion.div

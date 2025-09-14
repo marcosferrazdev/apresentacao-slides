@@ -45,85 +45,24 @@ export function PneumothoraxTitleSlide() {
             className="h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto max-w-2xl"
           />
           <h2 className="text-2xl text-blue-700 mt-4 font-medium">
-            Uma Abordagem Clínica e Terapêutica
+            Doenças Pleurais
           </h2>
-        </motion.div>
-
-        {/* Key Points */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="max-w-4xl mx-auto space-y-6"
-        >
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
-              className="bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-blue-100 shadow-sm"
-            >
-              <CircleDot className="w-12 h-12 text-blue-600 mb-4 mx-auto" />
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                Pneumotórax
-              </h3>
-              <p className="text-blue-700">
-                Presença de ar no espaço pleural, resultando em
-                perda da pressão negativa intrapleural e
-                consequente colapso pulmonar.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.6 }}
-              className="bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-blue-100 shadow-sm"
-            >
-              <Target className="w-12 h-12 text-blue-600 mb-4 mx-auto" />
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                Derrame Pleural
-              </h3>
-              <p className="text-blue-700">
-                Acúmulo patológico de fluido no espaço pleural,
-                classificado em transudato ou exsudato conforme
-                sua composição bioquímica.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.8 }}
-              className="bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-blue-100 shadow-sm"
-            >
-              <BookOpen className="w-12 h-12 text-blue-600 mb-4 mx-auto" />
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                Objetivo
-              </h3>
-              <p className="text-blue-700">
-                Revisar fisiopatologia, classificação,
-                diagnóstico e abordagem terapêutica das
-                principais patologias pleurais.
-              </p>
-            </motion.div>
-          </div>
         </motion.div>
 
         {/* Medical Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 2.0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
           className="mt-12"
         >
-          <div className="relative mx-auto w-64 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+          <div className="relative mx-auto max-w-2xl rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
             <ImageWithFallback
-              src="/Raio X 1.jpg"
-              alt="Radiografia de Tórax"
-              className="w-full h-full object-contain opacity-80"
+              src="/Pleurais 1.jpg"
+              alt="Anatomia Pleural"
+              className="w-full h-auto object-contain opacity-90"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
           </div>
         </motion.div>
       </motion.div>

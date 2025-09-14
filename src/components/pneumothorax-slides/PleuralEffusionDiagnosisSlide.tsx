@@ -193,10 +193,6 @@ export function PleuralEffusionDiagnosisSlide() {
               <div className="font-semibold text-orange-800 mb-1 text-xs">3. Caracterização</div>
               <div className="text-orange-700 text-xs">Toracocentese</div>
             </div>
-            <div className="bg-green-100 rounded-lg p-3 text-center border border-green-200">
-              <div className="font-semibold text-green-800 mb-1 text-xs">4. Etiologia</div>
-              <div className="text-green-700 text-xs">Critérios de Light</div>
-            </div>
           </div>
         </motion.div>
       </div>

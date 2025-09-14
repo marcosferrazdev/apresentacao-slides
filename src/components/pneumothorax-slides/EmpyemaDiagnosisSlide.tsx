@@ -97,26 +97,6 @@ const EmpyemaDiagnosisSlide: React.FC = () => {
             <strong>Essencial</strong> para o diagnóstico. A confirmação ocorre pela aspiração de pus franco ou por análise bioquímica do líquido pleural.
           </p>
           
-          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-            <h4 className="text-lg font-bold text-red-800 mb-3 flex items-center">
-              <Activity className="w-6 h-6 mr-2" />
-              Critérios Bioquímicos Típicos
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="text-center p-3 bg-white rounded-lg">
-                <div className="text-2xl font-bold text-red-600">pH</div>
-                <div className="text-lg text-gray-700">&lt; 7,20</div>
-              </div>
-              <div className="text-center p-3 bg-white rounded-lg">
-                <div className="text-2xl font-bold text-red-600">Glicose</div>
-                <div className="text-lg text-gray-700">&lt; 40 mg/dL</div>
-              </div>
-              <div className="text-center p-3 bg-white rounded-lg">
-                <div className="text-2xl font-bold text-red-600">DHL</div>
-                <div className="text-lg text-gray-700">&gt; 1.000 UI/L</div>
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </div>
