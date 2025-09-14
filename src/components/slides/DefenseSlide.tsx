@@ -132,7 +132,7 @@ export function DefenseSlide() {
             </h3>
             <div className="flex justify-center">
                <img 
-                 src="./Mucociliary-clearance (1).gif" 
+                 src="/Mucociliary-clearance (1).gif" 
                  alt="Animação da depuração mucociliar" 
                  className="max-w-full h-auto rounded-lg shadow-md"
                  style={{ maxHeight: '350px' }}
