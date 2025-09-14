@@ -48,7 +48,7 @@ export function AlveolarStabilitySlide() {
         </motion.div>
       </motion.div>
 
-      <div className="flex-1 grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 items-start relative z-10 min-h-0">
+      <div className="flex-1 grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 items-center relative z-10 min-h-0">
         {/* Content Side */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -150,7 +150,7 @@ export function AlveolarStabilitySlide() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col items-center justify-center"
+          className="flex items-center justify-center h-full"
         >
           <div className="relative">
             <motion.div
