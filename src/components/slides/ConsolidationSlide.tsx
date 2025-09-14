@@ -130,19 +130,35 @@ export function ConsolidationSlide() {
         })}
       </div>
 
-      {/* Flow Diagram */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 1.0 }}
-        className="max-w-5xl mx-auto"
-      >
-        <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-xl p-8 border border-blue-200 shadow-lg">
-          <h3 className="text-xl font-semibold text-center text-blue-900 mb-6">
-            Sequência Fisiopatológica
-          </h3>
+      {/* Flow Diagram with Images */}
+      <div className="max-w-7xl mx-auto flex items-start gap-8">
+        {/* Lung Image 1 - Left Side (Outside Card) */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 1.0 }}
+          className="flex-shrink-0"
+        >
+          <img 
+            src="/Pulmao 1.jpg" 
+            alt="Anatomia pulmonar - Pulmão 1" 
+            className="w-50 h-40 object-cover rounded-lg shadow-lg border border-blue-200"
+          />
+        </motion.div>
 
-          <div className="flex items-center justify-between">
+        {/* Flow Diagram Card - Center */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="flex-1"
+        >
+          <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-xl p-8 border border-blue-200 shadow-lg">
+            <h3 className="text-xl font-semibold text-center text-blue-900 mb-6">
+              Sequência Fisiopatológica
+            </h3>
+
+            <div className="flex items-center justify-between">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -205,9 +221,24 @@ export function ConsolidationSlide() {
               </p>
               <p className="text-xs text-blue-700">↓ PaO₂</p>
             </motion.div>
+            </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+
+        {/* Lung Image 2 - Right Side (Outside Card) */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="flex-shrink-0"
+        >
+          <img 
+            src="/Pulmao 2.jpg" 
+            alt="Anatomia pulmonar - Pulmão 2" 
+            className="w-60 h-40 object-cover rounded-lg shadow-lg border border-blue-200"
+          />
+        </motion.div>
+      </div>
     </div>
   );
 }
