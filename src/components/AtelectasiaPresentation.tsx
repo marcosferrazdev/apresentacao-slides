@@ -32,6 +32,7 @@ import { PostOperativeSlide } from "./atelectasia-slides/PostOperativeSlide";
 import { PathophysiologySlide } from "./atelectasia-slides/PathophysiologySlide";
 import { RadiologySlide } from "./atelectasia-slides/RadiologySlide";
 import { AtelectasiaConclusionSlide } from "./atelectasia-slides/AtelectasiaConclusionSlide";
+import { CombinedReferencesSlide } from "./atelectasia-slides/CombinedReferencesSlide";
 
 const slides = [
   // Pneumothorax, Pleural Effusion and Empyema slides (1-14)
@@ -50,7 +51,7 @@ const slides = [
   { id: 13, component: EmpyemaDiagnosisSlide },
   { id: 14, component: EmpyemaTreatmentSlide },
   
-  // Atelectasia slides (15-21)
+  // Atelectasia slides (15-22)
   { id: 15, component: AtelectasiaTitleSlide },
   { id: 16, component: AlveolarStabilitySlide },
   { id: 17, component: ClassificationSlide },
@@ -58,6 +59,7 @@ const slides = [
   { id: 19, component: PathophysiologySlide },
   { id: 20, component: RadiologySlide },
   { id: 21, component: AtelectasiaConclusionSlide },
+  { id: 22, component: CombinedReferencesSlide },
 ];
 
 interface AtelectasiaPresentationProps {

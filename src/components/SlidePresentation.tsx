@@ -17,6 +17,7 @@ import { ClinicalSlide } from "./slides/ClinicalSlide";
 import { SubtypesSlide } from "./slides/SubtypesSlide";
 import { SubtypesSlide2 } from "./slides/SubtypesSlide2";
 import { ConclusionSlide } from "./slides/ConclusionSlide";
+import { ReferencesSlide } from "./slides/ReferencesSlide";
 
 const slides = [
   { id: 1, component: TitleSlide },
@@ -28,6 +29,7 @@ const slides = [
   { id: 7, component: SubtypesSlide },
   { id: 8, component: SubtypesSlide2 },
   { id: 9, component: ConclusionSlide },
+  { id: 10, component: ReferencesSlide },
 ];
 
 interface SlidesPresentationProps {

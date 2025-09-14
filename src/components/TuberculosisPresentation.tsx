@@ -15,6 +15,7 @@ import { LatentVsActiveSlide } from "./tuberculosis-slides/LatentVsActiveSlide";
 import { ReactivationSlide } from "./tuberculosis-slides/ReactivationSlide";
 import { ClinicalCorrelationSlide } from "./tuberculosis-slides/ClinicalCorrelationSlide";
 import { TuberculosisConclusionSlide } from "./tuberculosis-slides/TuberculosisConclusionSlide";
+import { TuberculosisReferencesSlide } from "./tuberculosis-slides/TuberculosisReferencesSlide";
 
 const slides = [
   { id: 1, component: TuberculosisTitleSlide },
@@ -24,6 +25,7 @@ const slides = [
   { id: 5, component: ReactivationSlide },
   { id: 6, component: ClinicalCorrelationSlide },
   { id: 7, component: TuberculosisConclusionSlide },
+  { id: 8, component: TuberculosisReferencesSlide },
 ];
 
 interface TuberculosisPresentationProps {

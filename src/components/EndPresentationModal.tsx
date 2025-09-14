@@ -21,7 +21,7 @@ export function EndPresentationModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ export function EndPresentationModal({
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
         transition={{ duration: 0.3 }}
-        className="relative bg-white rounded-2xl shadow-xl border border-blue-200 p-8 max-w-md mx-4"
+        className="relative bg-white rounded-2xl shadow-xl border border-blue-200 p-8 max-w-md w-full"
       >
         {/* Close Button */}
         <button

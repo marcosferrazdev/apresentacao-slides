@@ -23,6 +23,7 @@ import { TreatmentSlide } from "./dpis-slides/TreatmentSlide";
 import { PrognosisSlide } from "./dpis-slides/PrognosisSlide";
 import { FluxogramaIntegradoSlide } from "./dpis-slides/FluxogramaIntegradoSlide";
 import { DpisMensagensChaveSlide } from "./dpis-slides/DpisMensagensChaveSlide";
+import { DpisReferencesSlide } from "./dpis-slides/DpisReferencesSlide";
 
 const slides = [
   { id: 1, component: DpisTitleSlide },
@@ -40,6 +41,7 @@ const slides = [
   { id: 13, component: PrognosisSlide },
   { id: 14, component: FluxogramaIntegradoSlide },
   { id: 15, component: DpisMensagensChaveSlide },
+  { id: 16, component: DpisReferencesSlide },
 ];
 
 interface DpisPresentationProps {
