@@ -34,64 +34,67 @@ const EmpyemaTreatmentSlide: React.FC = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="flex-1 flex flex-col justify-center relative z-10 space-y-6">
-        {/* Antibiotic Therapy */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-green-100"
-        >
-          <h3 className="text-2xl font-bold text-green-800 mb-4 flex items-center">
-            <Pill className="w-8 h-8 mr-3 text-green-600" />
-            Antibioticoterapia
-          </h3>
-          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Mandatória</strong>, com espectro direcionado aos patógenos mais prevalentes, administrada por <strong>via intravenosa</strong>.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Pleural Drainage */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-green-100"
-        >
-          <h3 className="text-2xl font-bold text-green-800 mb-4 flex items-center">
-            <Syringe className="w-8 h-8 mr-3 text-green-600" />
-            Drenagem Pleural
-          </h3>
-          <div className="space-y-4">
-            <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
-              <div className="flex items-center mb-2">
-                <AlertTriangle className="w-6 h-6 mr-2 text-orange-600" />
-                <h4 className="text-lg font-bold text-orange-800">
-                  Procedimento Fundamental
-                </h4>
-              </div>
-              <p className="text-gray-700">
-                Indicado a partir da <strong>Fase II</strong>.
+      <div className="flex-1 flex flex-col justify-center relative z-10 space-y-6 max-w-6xl mx-auto w-full">
+        {/* First Row - Two Cards Side by Side */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Antibiotic Therapy */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-green-100"
+          >
+            <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center">
+              <Pill className="w-7 h-7 mr-3 text-green-600" />
+              Antibioticoterapia
+            </h3>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <p className="text-base text-gray-700 leading-relaxed">
+                <strong>Mandatória</strong>, com espectro direcionado aos patógenos mais prevalentes, administrada por <strong>via intravenosa</strong>.
               </p>
             </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="text-lg font-bold text-green-800 mb-2">
-                Objetivos
-              </h4>
-              <ul className="text-gray-700 space-y-1">
-                <li>• <strong>Evacuação completa</strong> da coleção purulenta</li>
-                <li>• Controle do processo infeccioso</li>
-                <li>• Permitir a <strong>reexpansão pulmonar</strong></li>
-              </ul>
+          </motion.div>
+
+          {/* Pleural Drainage */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-green-100"
+          >
+            <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center">
+              <Syringe className="w-7 h-7 mr-3 text-green-600" />
+              Drenagem Pleural
+            </h3>
+            <div className="space-y-3">
+              <div className="bg-orange-50 rounded-lg p-3 border-l-4 border-orange-500">
+                <div className="flex items-center mb-2">
+                  <AlertTriangle className="w-5 h-5 mr-2 text-orange-600" />
+                  <h4 className="text-base font-bold text-orange-800">
+                    Procedimento Fundamental
+                  </h4>
+                </div>
+                <p className="text-sm text-gray-700">
+                  Indicado a partir da <strong>Fase II</strong>.
+                </p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+                <h4 className="text-base font-bold text-green-800 mb-2">
+                  Objetivos
+                </h4>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• <strong>Evacuação completa</strong> da coleção purulenta</li>
+                  <li>• Controle do processo infeccioso</li>
+                  <li>• Permitir a <strong>reexpansão pulmonar</strong></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         {/* Surgical Treatment */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-green-100"
