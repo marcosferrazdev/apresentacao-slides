@@ -166,17 +166,17 @@ export default function App() {
             transition={{ duration: 0.6, delay: 1.2 }}
             className="bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-blue-100 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
             onClick={() =>
-              setSelectedPresentation("atelectasia")
+              setSelectedPresentation("tuberculosis")
             }
           >
-            <CircleDot className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <Bug className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Fisiopatologia da Atelectasia
+              Fisiopatologia da Tuberculose
             </h3>
             <p className="text-blue-700 mb-6 leading-relaxed">
-              Estudo dos mecanismos de colapso alveolar,
-              estabilidade pulmonar, classificação e implicações
-              clínicas da atelectasia.
+              Do contágio à cavitação: compreenda os mecanismos
+              do Mycobacterium tuberculosis, formação do
+              granuloma e progressão para doença ativa.
             </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
@@ -190,17 +190,17 @@ export default function App() {
             transition={{ duration: 0.6, delay: 1.4 }}
             className="bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-blue-100 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
             onClick={() =>
-              setSelectedPresentation("tuberculosis")
+              setSelectedPresentation("atelectasia")
             }
           >
-            <Bug className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <CircleDot className="w-16 h-16 text-blue-600 mb-6 mx-auto group-hover:scale-110 transition-transform duration-300" />
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Fisiopatologia da Tuberculose
+              Fisiopatologia da Atelectasia
             </h3>
             <p className="text-blue-700 mb-6 leading-relaxed">
-              Do contágio à cavitação: compreenda os mecanismos
-              do Mycobacterium tuberculosis, formação do
-              granuloma e progressão para doença ativa.
+              Estudo dos mecanismos de colapso alveolar,
+              estabilidade pulmonar, classificação e implicações
+              clínicas da atelectasia.
             </p>
             <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-800 transition-colors">
               <span className="mr-2">Acessar apresentação</span>
