@@ -116,16 +116,29 @@ export function RadiologySlide() {
               Exemplo Radiológico
             </h4>
             <div className="relative">
-              <div className="w-full h-48 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1584555684040-bad07f46a21f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGVzdCUyMHhyYXklMjByYWRpb2dyYXBofGVufDF8fHx8MTc1Nzc4ODQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Radiografia de tórax"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+              <div className="flex gap-2 h-48">
+                {/* Raio X 1 */}
+                <div className="flex-1 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+                  <ImageWithFallback
+                    src="/Raio X 1.jpg"
+                    alt="Radiografia de tórax 1"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+                </div>
+                
+                {/* Raio X 2 */}
+                <div className="flex-1 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
+                  <ImageWithFallback
+                    src="/Raio X 2.jpg"
+                    alt="Radiografia de tórax 2"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+                </div>
               </div>
               <div className="absolute -bottom-1 -right-1 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                Radiografia PA
+                Radiografias PA
               </div>
             </div>
           </motion.div>
