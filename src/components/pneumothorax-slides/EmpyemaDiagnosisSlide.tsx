@@ -34,7 +34,9 @@ const EmpyemaDiagnosisSlide: React.FC = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="flex-1 flex flex-col justify-center relative z-10 space-y-6">
+      <div className="flex-1 flex relative z-10 gap-8">
+        {/* Left side - Cards */}
+        <div className="flex-1 flex flex-col justify-center space-y-6">
         {/* Clinical Manifestations */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -97,6 +99,37 @@ const EmpyemaDiagnosisSlide: React.FC = () => {
             <strong>Essencial</strong> para o diagnóstico. A confirmação ocorre pela aspiração de pus franco ou por análise bioquímica do líquido pleural.
           </p>
           
+        </motion.div>
+        </div>
+
+        {/* Right side - Images */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="flex-1 flex items-center justify-center gap-4"
+        >
+          <div className="relative">
+            <img
+              src="/Pleurais 6.jpg"
+              alt="Empiema Pleural - Diagnóstico por Imagem 1"
+              className="w-[200px] h-[200px] object-cover rounded-xl shadow-2xl border-4 border-white"
+            />
+            <div className="absolute -bottom-3 -right-3 bg-blue-600 text-white px-2 py-1 rounded-lg shadow-lg">
+              <span className="text-xs font-semibold">Imagem 1</span>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <img
+              src="/Pleurais 7.jpg"
+              alt="Empiema Pleural - Diagnóstico por Imagem 2"
+              className="w-[200px] h-[200px] object-cover rounded-xl shadow-2xl border-4 border-white"
+            />
+            <div className="absolute -bottom-3 -right-3 bg-blue-600 text-white px-2 py-1 rounded-lg shadow-lg">
+              <span className="text-xs font-semibold">Imagem 2</span>
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>
