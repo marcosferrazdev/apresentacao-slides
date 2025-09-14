@@ -180,7 +180,7 @@ export function PleuralEffusionDiagnosisSlide() {
             <Activity className="w-5 h-5 mr-2" />
             🎯 Algoritmo Diagnóstico
           </h3>
-          <div className="grid md:grid-cols-4 gap-3 text-sm">
+          <div className="grid md:grid-cols-3 gap-3 text-sm justify-center max-w-4xl mx-auto">
             <div className="bg-red-100 rounded-lg p-3 text-center border border-red-200">
               <div className="font-semibold text-red-800 mb-1 text-xs">1. Suspeita Clínica</div>
               <div className="text-red-700 text-xs">Sintomas + Exame Físico</div>

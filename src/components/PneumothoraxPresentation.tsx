@@ -15,6 +15,7 @@ import { PneumothoraxDiagnosisSlide } from "./pneumothorax-slides/PneumothoraxDi
 import { PneumothoraxTreatmentSlide } from "./pneumothorax-slides/PneumothoraxTreatmentSlide";
 import { PneumothoraxTreatmentSlide2 } from "./pneumothorax-slides/PneumothoraxTreatmentSlide2";
 import { PleuralEffusionDefinitionSlide } from "./pneumothorax-slides/PleuralEffusionDefinitionSlide";
+import { PleuralEffusionPhysiologySlide } from "./pneumothorax-slides/PleuralEffusionPhysiologySlide";
 import { PleuralEffusionDiagnosisSlide } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide";
 import { PleuralEffusionDiagnosisSlide2 } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide2";
 import { PleuralEffusionTreatmentSlide } from "./pneumothorax-slides/PleuralEffusionTreatmentSlide";
@@ -30,12 +31,13 @@ const slides = [
   { id: 5, component: PneumothoraxTreatmentSlide },
   { id: 6, component: PneumothoraxTreatmentSlide2 },
   { id: 7, component: PleuralEffusionDefinitionSlide },
-  { id: 8, component: PleuralEffusionDiagnosisSlide },
-  { id: 9, component: PleuralEffusionDiagnosisSlide2 },
-  { id: 10, component: PleuralEffusionTreatmentSlide },
-  { id: 11, component: EmpyemaDefinitionSlide },
-  { id: 12, component: EmpyemaDiagnosisSlide },
-  { id: 13, component: EmpyemaTreatmentSlide },
+  { id: 8, component: PleuralEffusionPhysiologySlide },
+  { id: 9, component: PleuralEffusionDiagnosisSlide },
+  { id: 10, component: PleuralEffusionDiagnosisSlide2 },
+  { id: 11, component: PleuralEffusionTreatmentSlide },
+  { id: 12, component: EmpyemaDefinitionSlide },
+  { id: 13, component: EmpyemaDiagnosisSlide },
+  { id: 14, component: EmpyemaTreatmentSlide },
 ];
 
 interface PneumothoraxPresentationProps {

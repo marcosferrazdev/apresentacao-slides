@@ -16,6 +16,7 @@ import { PneumothoraxDiagnosisSlide } from "./pneumothorax-slides/PneumothoraxDi
 import { PneumothoraxTreatmentSlide } from "./pneumothorax-slides/PneumothoraxTreatmentSlide";
 import { PneumothoraxTreatmentSlide2 } from "./pneumothorax-slides/PneumothoraxTreatmentSlide2";
 import { PleuralEffusionDefinitionSlide } from "./pneumothorax-slides/PleuralEffusionDefinitionSlide";
+import { PleuralEffusionPhysiologySlide } from "./pneumothorax-slides/PleuralEffusionPhysiologySlide";
 import { PleuralEffusionDiagnosisSlide } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide";
 import { PleuralEffusionDiagnosisSlide2 } from "./pneumothorax-slides/PleuralEffusionDiagnosisSlide2";
 import { PleuralEffusionTreatmentSlide } from "./pneumothorax-slides/PleuralEffusionTreatmentSlide";
@@ -33,7 +34,7 @@ import { RadiologySlide } from "./atelectasia-slides/RadiologySlide";
 import { AtelectasiaConclusionSlide } from "./atelectasia-slides/AtelectasiaConclusionSlide";
 
 const slides = [
-  // Pneumothorax, Pleural Effusion and Empyema slides (1-13)
+  // Pneumothorax, Pleural Effusion and Empyema slides (1-14)
   { id: 1, component: PneumothoraxTitleSlide },
   { id: 2, component: PneumothoraxDefinitionSlide },
   { id: 3, component: PneumothoraxClassificationSlide },
@@ -41,21 +42,22 @@ const slides = [
   { id: 5, component: PneumothoraxTreatmentSlide },
   { id: 6, component: PneumothoraxTreatmentSlide2 },
   { id: 7, component: PleuralEffusionDefinitionSlide },
-  { id: 8, component: PleuralEffusionDiagnosisSlide },
-  { id: 9, component: PleuralEffusionDiagnosisSlide2 },
-  { id: 10, component: PleuralEffusionTreatmentSlide },
-  { id: 11, component: EmpyemaDefinitionSlide },
-  { id: 12, component: EmpyemaDiagnosisSlide },
-  { id: 13, component: EmpyemaTreatmentSlide },
+  { id: 8, component: PleuralEffusionPhysiologySlide },
+  { id: 9, component: PleuralEffusionDiagnosisSlide },
+  { id: 10, component: PleuralEffusionDiagnosisSlide2 },
+  { id: 11, component: PleuralEffusionTreatmentSlide },
+  { id: 12, component: EmpyemaDefinitionSlide },
+  { id: 13, component: EmpyemaDiagnosisSlide },
+  { id: 14, component: EmpyemaTreatmentSlide },
   
-  // Atelectasia slides (14-20)
-  { id: 14, component: AtelectasiaTitleSlide },
-  { id: 15, component: AlveolarStabilitySlide },
-  { id: 16, component: ClassificationSlide },
-  { id: 17, component: PostOperativeSlide },
-  { id: 18, component: PathophysiologySlide },
-  { id: 19, component: RadiologySlide },
-  { id: 20, component: AtelectasiaConclusionSlide },
+  // Atelectasia slides (15-21)
+  { id: 15, component: AtelectasiaTitleSlide },
+  { id: 16, component: AlveolarStabilitySlide },
+  { id: 17, component: ClassificationSlide },
+  { id: 18, component: PostOperativeSlide },
+  { id: 19, component: PathophysiologySlide },
+  { id: 20, component: RadiologySlide },
+  { id: 21, component: AtelectasiaConclusionSlide },
 ];
 
 interface AtelectasiaPresentationProps {
