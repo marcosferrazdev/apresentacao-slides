@@ -133,16 +133,12 @@ export function SubtypesSlide2() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-lg sm:rounded-xl overflow-hidden shadow-xl border-2 border-blue-200 bg-white">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdW5ncyUyMGFuYXRvbXklMjBtZWRpY2FsfGVufDF8fHx8MTc1NzgwMDk4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Anatomia pulmonar"
+                  src="/Pneumonia.jpg"
+                  alt="Pneumonia"
                   className="w-full h-64 sm:h-72 lg:h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent" />
-                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
-                  <p className="text-white text-xs sm:text-sm font-medium text-center bg-black/30 backdrop-blur-sm rounded px-2 py-1">
-                    Anatomia Pulmonar
-                  </p>
-                </div>
+                
               </div>
             </div>
           </motion.div>
