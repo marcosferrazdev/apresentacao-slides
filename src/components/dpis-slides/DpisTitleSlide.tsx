@@ -117,9 +117,9 @@ export function DpisTitleSlide() {
           className="mt-12"
         >
           <div className="relative mx-auto w-48 h-32 rounded-lg overflow-hidden shadow-lg border-2 border-blue-200">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbHVuZ3MlMjB4cmF5fGVufDF8fHx8MTc1NzY5ODk4N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Radiografia pulmonar"
+            <img
+              src="/DPI 1.jpg"
+              alt="DPI - Doença Pulmonar Intersticial"
               className="w-full h-full object-cover opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
