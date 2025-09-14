@@ -44,13 +44,13 @@ export function PneumothoraxTreatmentSlide() {
 
       <div className="flex-1 relative z-10">
         {/* Treatment Options Grid */}
-        <div className="grid lg:grid-cols-2 gap-6 mb-6">
+        <div className="grid lg:grid-cols-4 gap-4 mb-6">
           {/* Conservative Management */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-blue-100 shadow-lg"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -90,7 +90,7 @@ export function PneumothoraxTreatmentSlide() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-blue-100 shadow-lg"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -124,16 +124,14 @@ export function PneumothoraxTreatmentSlide() {
               </div>
             </div>
           </motion.div>
-        </div>
 
-        {/* Emergency and Surgical Management */}
-        <div className="grid lg:grid-cols-2 gap-6 mb-6">
+        {/* Emergency and Surgical Management - moved to same row */}
           {/* Emergency Management */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-red-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-red-100 shadow-lg"
           >
             <div className="text-center mb-4">
               <motion.div
@@ -179,7 +177,7 @@ export function PneumothoraxTreatmentSlide() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-purple-100 shadow-lg"
+            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-purple-100 shadow-lg"
           >
             <div className="text-center mb-4">
               <motion.div
